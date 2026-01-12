@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* تنسيق الصندوق الأخضر الكبير (Header) */
+.main-header {
+    background-color: #033009; /* اللون الأخضر الغامق بتاعك */
+    padding: 10px 0;
+    width: 100%;
+}
+body {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  padding-top: 130px;
+
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px; /* عشان يبقى بيضاوي زي الصورة */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  z-index: 999;
+}
+
+
+.whatsapp-btn img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;  /* تثبيت النافبار فوق */
+     top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  width: 100%;
+  background: #033009;
+  border-bottom: 1px solid #0c3f18;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 55px;
+  filter: brightness(1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.logo img:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.logo h2 {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1;
+  margin: 0;
+}
+
+.logo span {
+  font-size: 12px;
+  color: #a8d5b2;
+  margin: 0;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8fd19e;
+}
+
+/* SEARCH & ICONS */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-box input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  width: 180px;
+}
+
+.icons i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  color: #8fd19e;
+}
+
+/* MENU TOGGLE (MOBILE) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #033009;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+   
+  
+}
+/* الحاوية الكبيرة للقسم */
+.reviews-container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* تنسيق العناوين */
+.main-title {
+    color: #033009; /* لونك المفضل */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* نظام الشبكة للكروت */
+.reviews-grid {
+    display: grid;
+    /* بيخلي الكروت تترص 3 جنب بعض وتصغر حسب الشاشة */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; /* المسافات بين الكروت */
+}
+
+/* تنسيق الكارت الأخضر */
+.review-card {
+    background-color: #033009; /* اللون الأخضر الغامق */
+    color: white; /* النص أبيض عشان يظهر */
+    padding: 30px;
+    border-radius: 20px; /* حواف دائرية ناعمة */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* ظل خفيف للكارت */
+    text-align: right; /* محاذاة النص لليمين */
+    transition: transform 0.3s ease;
+}
+
+/* حركة بسيطة لما الماوس ييجي على الكارت */
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+/* رأس الكارت (النجوم والاقتباس) */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #ffcc00; /* لون ذهبي للنجوم */
+    font-weight: bold;
+}
+
+.quote-icon {
+    font-size: 40px;
+    opacity: 0.3;
+}
+
+/* نص الرأي */
+.review-text {
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+/* بيانات العميل */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-profile img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; /* صورة دائرية */
+    border: 2px solid rgba(255,255,255,0.2);
+    object-fit: cover;
+}
+
+.user-details h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.user-details p {
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.b{
+    height: 150px;
+    background-color: #033009;
+}
+body{
+     font-family: "Open Sans", sans-serif;
+}
+.m{
+    content: attr();
+}
+.l{
+    color: #033009;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #033009;
+    color: #fff;
+    padding: 50px 20px 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-box p {
+    color: #cde5d4;
+    font-size: 14px;
+    max-width: 280px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #8fd19e;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #8fd19e;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #0e4a1f;
+    font-size: 14px;
+    color: #cde5d4;
+}

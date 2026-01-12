@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="My Glow Skin Care - Your ultimate guide to healthy and glowing skin. Discover the latest tips, product reviews, and natural remedies tailored for all My Glow types. Visit us now for expert advice and quality products." />
+
+  <title> My Glow </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/img/logoo.jpg" type="image/x-icon" rel="icon" />
+  <link rel="stylesheet" href="/style.css/Home.css">
+
+</head>
+<body>
+  <header class="navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="img/logoskin.jpg" alt="Logo">
+
+      <div class="logo-text">
+        <h2>My Glow</h2>
+        <span>Cosmeceutical Store</span>
+      </div>
+    </div>
+
+    <!-- Menu Toggle (Mobile) -->
+    <div class="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/pro.html">Products</a></li>
+      <li><a href="/Customer.html">Customer Reviews </a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+
+    <!-- Search & Icons -->
+    <div class="nav-actions">
+      <div class="search-box">
+        <input type="text" placeholder="Search products...">
+      </div>
+      <div class="icons">
+        <a href="/cart" aria-label="عربة الدفع">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a href="/register.html" aria-label="حساب المستخدم">
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</header>
+  <section class="hero-slider" aria-label="عروض مميزة">
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="img/prs5.jpg" class="d-block w-100" alt="عناية بالبشرة">
+
+          <!-- overlay -->
+          <div class="overlay"></div>
+
+          <div class="carousel-caption">
+            <h2>بشرة صحية تبدأ من هنا</h2>
+            <p>أفضل منتجات العناية بالبشرة</p>
+            <a href="#products" class="btn btn-success">تسوق الآن</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="img/prs4.jpg" class="d-block w-100" alt="عروض سكين كير">
+
+          <div class="overlay"></div>
+
+          <div class="carousel-caption">
+            <h2>خصومات تصل إلى 40%</h2>
+            <p>لفترة محدودة</p>
+            <a href="#products" class="btn btn-success">اكتشف العروض</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="img/prs6.jpg" class="d-block w-100" alt="روتين العناية">
+
+          <div class="overlay"></div>
+
+          <div class="carousel-caption">
+            <h2>روتينك اليومي لبشرة مثالية</h2>
+            <p>منتجات مختارة بعناية</p>
+            <a href="#products" class="btn btn-success">ابدأ الآن</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+
+  <section class="offers-section  promo-banner" aria-label="عروض خاصة">
+    <h2 class="offers-title">عروض خاصة - الحقها الآن</h2>
+
+    <div id="countdown"
+      style="text-align: center; color: #ffffff; font-weight: 700; font-size: 24px; margin-bottom: 30px;">
+      <span id="days">00</span> أيام
+      <span id="hours">00</span> ساعة
+      <span id="minutes">00</span> دقيقة
+      <span id="seconds">00</span> ثانية
+    </div>
+  </section>
+  <section class="offers-section" aria-label="عروض خاصة">
+    <div class="offers-grid">
+      <div class="offer-card">
+        <div class="offer-icon">🎁</div>
+        <h3>هدية مجانية</h3>
+        <p> My Glow احصل علي اي منتج الان من  </p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">💸</div>
+        <h3>خصم 15%</h3>
+        <p>خصم خاص عند طلبك الأول من خلال الموقع</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🚚</div>
+        <h3>شحن مجاني</h3>
+        <p>شحن مجاني داخل جميع أنحاء القاهرة</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🛡️</div>
+        <h3>ضمان جودة</h3>
+        <p>ضمان استبدال المنتج في حال وجود أي عيوب </p>
+      </div>
+    </div>
+  </section>
+
+
+  <a href="https://wa.me/201007359722" class="whatsapp-btn" target="_blank">
+    <span>WhatsApp us</span>
+  </a>
+
+  <section class="products-container" aria-label="المنتجات">
+
+
+
+
+    <div class="product-card">
+      <span class="discount">-30%</span>
+      <img src="img/pro1.jpg" alt="Vitamin C Serum">
+
+      <h3>Vitamin C Serum</h3>
+      <p class="price">
+        <span class="new">EGP 350</span>
+        <span class="old">EGP 500</span>
+      </p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">-25%</span>
+      <img src="img/pro2.jpg">
+      <h3>Gentle Cleanser</h3>
+      <p class="price">
+        <span class="new">EGP 280</span>
+        <span class="old">EGP 375</span>
+      </p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">-40%</span>
+      <img src="img/pro3.jpg">
+      <h3>Hydrating Cream</h3>
+      <p class="price">
+        <span class="new">EGP 420</span>
+        <span class="old">EGP 700</span>
+      </p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">-20%</span>
+      <img src="img/pro8.jpg">
+      <h3>Clay Face Mask</h3>
+      <p class="price">
+        <span class="new">EGP 300</span>
+        <span class="old">EGP 380</span>
+      </p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <span class="discount">-40%</span>
+      <img src="/img/pro4.jpg">
+      <h3>Hydrating Cream</h3>
+      <p class="price">
+        <span class="new">EGP 420</span>
+        <span class="old">EGP 700</span>
+      </p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">-20%</span>
+      <img src="/img/pro7.jpg">
+      <h3>Clay Face Mask</h3>
+      <p class="price">
+        <span class="new">EGP 300</span>
+        <span class="old">EGP 380</span>
+      </p>
+      <button>Add to Cart</button>
+    </div>
+
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- About -->
+      <div class="footer-box">
+        <h3>My Glow</h3>
+        <p>
+          Your trusted destination for premium skincare and beauty products.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/pro.html">Products</a></li>
+          <li><a href="/Customer.html">Customer Reviews</a></li>
+          <li><a href="#">Routines</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="social-icons">
+        <a href="https:www.facebook.com/radwa.mohamed.446924" target="_blank" aria-label="Facebook"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/radwa_mohamed0_0?igsh=MXRoOXlyYzdhdjIw" target="_blank "
+          aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/radwanagy-r888" target="_blank " aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/01007359722" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+    </div>
+
+  
+  </footer>
+
+  
+ 
+ <script src="style.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
